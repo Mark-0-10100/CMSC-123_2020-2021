@@ -1,0 +1,202 @@
+{% extends 'base_NavBar.html' %}
+{% load static %}
+
+{% block navbar %}
+    <link rel="stylesheet" href="{% static "css/projPortfoliostyle.css" %}">
+    <!--Software Projects
+        •This block of code displays the "Software Projects"
+        •Contains images then text descriptions
+    ----------------------------------------------------------------->
+    <div class="divisionTitle">
+        <h1>Software Projects</h1>
+    </div>
+    
+    <div class="softwareProj"> <!-- Project no.1 -->
+        <img src="{% static "images/spotify-korea.jpg" %}" alt="spotify app">
+        <div class="container">
+            <a href="#"><p>Spawtify</p></a>
+        </div>
+        <div class="details">
+            <p>Sed non massa congue, posuere sapien sit amet, faucibus nulla. Maecenas in nulla id est sagittis tempor id sed nunc. Nam interdum, lacus ac tincidunt ultrices, felis ante commodo eros, at blandit ante velit ac magna. Duis lacinia risus lobortis ex tincidunt sollicitudin. Fusce sapien sem, feugiat vitae nisl gravida, scelerisque consequat ex. Mauris cursus ut magna quis convallis. Donec porta sagittis dolor, a vulputate nibh faucibus et. Mauris ac sapien eu enim cursus ullamcorper vel eu dolor. Donec accumsan, tortor gravida suscipit hendrerit, quam nisi vehicula nisi, eu aliquet tortor nisi nec urna. Donec suscipit efficitur venenatis.</p>
+        </div>
+    </div>
+
+    <div class="softwareProj"> <!-- Project no. -->
+        <img src="{% static "images/binance4.jpg" %}" alt="binance app">
+        <div class="container">
+            <a href="#"><p>Cinque Terre</p></a>
+        </div>
+        <div class="details">
+            <p>Nulla condimentum risus eu bibendum rutrum. Etiam tempor, ante nec fermentum mattis, leo erat imperdiet eros, id efficitur ex mauris ullamcorper nibh. Donec lobortis felis id facilisis tincidunt. Suspendisse potenti. Nam at nisi sem. Sed non velit consectetur, tempus massa ac, pulvinar tortor. Aliquam magna purus, tincidunt in urna eu, molestie dictum neque. Cras gravida neque et pretium accumsan. Cras nec vulputate diam. Nulla tempor quam eros, ac auctor turpis fringilla eget. Donec sagittis erat in mattis convallis. Quisque volutpat euismod volutpat. Maecenas egestas pellentesque felis.</p>
+        </div>
+    </div>
+    <!--------------------------------------------------------------->
+
+    <!--Art Projects
+        •This block of code displays the "Art Projects"
+        •Contains numerous images in square windows
+        •Links associated with image are for crediting art sources
+    ----------------------------------------------------------------->
+    <div class="divisionTitle"> 
+        <h1>Art Projects</h1>
+    </div>
+
+    <div class="artprojbody">
+        <div class="artprojects">
+            <!-- Art no. 1-->
+            <div class="artprojContainer">  
+                <img src="{% static "images/art1-1.jpg" %}" alt="Third Touch" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://www.pinterest.ph/pin/327636941645365552/" target="_blank">
+                        <div class="text">Third Touch</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 2-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art2.jpg" %}" alt="The Missing Courage" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://msartastic.com/2019/08/14/element-of-art-line-in-10-famous-artworks/" target="_blank">
+                        <div class="text">The Missing Courage</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 3-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art3.jpg" %}" alt="Witches of Thorn" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://www.theartstory.org/artist/van-gogh-vincent/artworks/" target="_blank">
+                        <div class="text">Witches of Thorn</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 4-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art4-4.jpg" %}" alt="The Destruction's Years" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://www.artstation.com/artwork/roZ4e" target="_blank">
+                        <div class="text">The Destruction's Years</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 5-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art5-5-5.jpg" %}" alt="Planet in the Spirits" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://mymodernmet.com/famous-self-portraits/" target="_blank">
+                        <div class="text">Planet in the Spirits</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 6-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art6.jpg" %}" alt="Green Scent" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://doitbeforeme.com/surreal-art/" target="_blank">
+                        <div class="text">Green Scent</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 7-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art7.jpg" %}" alt="Truth of Valley" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://us.blochworld.com/blogs/beyond-the-barre/9-famous-artworks-inspired-by-dance" target="_blank">
+                        <div class="text">Truth of Valley</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 8-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art8-8.jpg" %}" alt="The Elves's Door" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://www.mutualart.com/Artwork/Wide-Hilly-Landscape-with-Flower-Meadow-/4241433071E015CE" target="_blank">
+                        <div class="text">The Elves's Door</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Art no. 9-->
+            <div class="artprojContainer">
+                <img src="{% static "images/art9.jpg" %}" alt="The Fillet Fish" class="artprojImages">
+                <div class="artprojText">
+                    <a href="https://www.topteny.com/top-10-most-famous-and-beautiful-artworks-in-the-world/" target="_blank">
+                        <div class="text">The Fillet Fish</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------------->
+
+    <!--Research
+        •This block of code displays the "Research" projects
+        •Contains a title text and some description
+    ----------------------------------------------------------------->
+    <div class="research">
+
+        <div class="divisionTitle"> 
+            <h1>Research</h1> 
+        </div>
+        <!-- Research no. 1-->
+        <h3>The Use of Money as a Medium of Exchange and Its Impact on Diversity of Trade</h3>
+        <div class="details">
+            <p>Aenean ac risus magna. Morbi sed bibendum lectus, quis congue neque. Praesent turpis nisl, vestibulum in massa sed, sollicitudin fringilla felis. Etiam eleifend aliquam tempus. Maecenas sit amet ultricies mi, ac egestas velit. Maecenas a elit ut justo volutpat pulvinar. Fusce ac vulputate ex, ac bibendum elit. Ut mi est, lobortis non nulla in, placerat vehicula massa.</p>
+        </div>
+        <!-- Research no. 2-->
+        <h3>The Advantages and Disadvantages of the Impact of Technology on the Food Supplies</h3>
+        <div class="details">
+            <p>Ut nec fringilla magna, nec ullamcorper neque. Fusce tempus nisl non nisl venenatis, nec blandit sem sodales. Cras id sollicitudin sem, nec porttitor justo. Nam eu consequat ante, ut tempus purus. Ut consectetur diam tristique nibh viverra volutpat. Sed quis eleifend tortor. Sed justo lorem, porttitor semper justo vitae, facilisis tempor velit. Pellentesque id arcu gravida nisi lobortis interdum nec nec ligula. Vestibulum commodo ligula eu magna fermentum sollicitudin. Nunc sollicitudin libero odio, ut pulvinar quam elementum vulputate. Proin volutpat bibendum felis, nec lobortis tortor vestibulum at. Suspendisse sollicitudin condimentum consequat. Aliquam in elementum nisi. Aenean mollis massa vel sem eleifend tincidunt. Donec dapibus est non dapibus consequat.</p>
+        </div>
+        <!-- Research no. 3-->
+        <h3>Technology Is Spontaneously Approaching 'Humanity' with the Passage of Time</h3>
+        <div class="details">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis eget ex diam. In hac habitasse platea dictumst. Mauris feugiat libero a quam mollis varius. Nullam ut nisl in leo vestibulum gravida. Integer pretium risus erat, sit amet rutrum nibh ultrices euismod. Etiam eget leo aliquet, bibendum odio non, porttitor felis.</p>
+        </div>
+    </div>
+    <!--------------------------------------------------------------->
+
+    <!--Projects in Progress
+        •This block of code displays the "Projects in Progress"
+        •Contains a title text and some text description
+    ----------------------------------------------------------------->
+    <div class="ProjectsInProgress">
+        <div class="divisionTitle"> 
+            <h1>Projects In Progress</h1>
+        </div>
+        
+        <h3>Snowmobile Engine</h3>
+        <div class="details">
+            <p>Ut mattis commodo ligula, in faucibus dui placerat tristique. Vestibulum accumsan velit ex, eget condimentum tortor tincidunt id. Donec eu nibh vitae orci malesuada hendrerit ut id diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id aliquet turpis. Donec eget laoreet nunc, eu ornare nisi. Nullam auctor enim fermentum libero rutrum, non tincidunt libero faucibus. Suspendisse potenti. Duis quam orci, iaculis nec urna eu, gravida placerat felis. Aenean posuere mollis tincidunt. Pellentesque at sem quis velit semper suscipit. Fusce enim nisi, fringilla vitae tempor ac, molestie ut leo.</p>
+        </div>
+    </div>
+    <!--------------------------------------------------------------->
+
+    <!--Projects in the Future
+        •This block of code displays the "Projects in the Future"
+        •Contains a title text and some text description
+    ----------------------------------------------------------------->
+    <div class="ProjectsInTheFuture">
+        <div class="divisionTitle"> 
+            <h1>Projects In The Future</h1>
+        </div>
+        
+        <h3>Rudder in Navigation</h3>
+        <div class="details">
+            <p>Curabitur faucibus ligula eu ornare ultrices. Cras et fermentum nisl, a vulputate est. Quisque pharetra fringilla augue at scelerisque. Aenean a dolor nec orci gravida consectetur id at velit. Cras condimentum congue tempor. Donec libero libero, commodo vel tempor nec, fringilla vitae enim. In neque dui, consectetur facilisis mi lobortis, fermentum bibendum orci.<br><br><br></p>
+        </div>
+    </div>
+    <!--------------------------------------------------------------->
+
+
+<!--JavaScript and GSAP 
+    •This block of code contains the library import (from "GSAP") for the animations; and
+    •External JavaScript
+----------------------------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="{% static "javascript/projectPortfolioScript.js" %}"></script>
+<!--------------------------------------------------------------->
+
+
+{% endblock %}

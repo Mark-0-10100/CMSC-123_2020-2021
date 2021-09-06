@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+/*Navigation Bar
+•This block of code contains the styles for the navigation bar of the page
+-------------------------------------------------------------*/
+.nav-container {
+  background-color: black;
+}
+
+.nav-container .namelogo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin-left: 50px;
+}
+
+.namelogo:hover {
+  color: black;
+  background-color: white;
+  border-radius: 1em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul a span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+  background-color: #ffffff;
+  border-radius: 1em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.divisionTitle {
+  font-size: 32px;
+  text-align: left;
+  margin-left: 150px;
+}
+
+/* Software Projects
+•This block of code contains the styles for "Software Projects"
+-------------------------------------------------------------*/
+.softwareProj img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: none;
+     object-fit: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: -1;
+}
+
+.softwareProj .container {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  padding: 1mm;
+  margin-top: -125px;
+  background: rgba(0, 0, 0, 0.781);
+  position: relative;
+  z-index: 100;
+}
+
+.softwareProj .container p {
+  color: white;
+}
+
+.softwareProj .details {
+  text-align: left;
+  margin: 20px 200px 20px 200px;
+}
+
+.softwareProj a:hover, .softwareProj a:visited, .softwareProj a:link, .softwareProj a:active {
+  text-decoration: none;
+}
+
+/* Art Projects
+•This block of code contains the styles for "Art Projects"
+•Contains numerous images in square tiles
+-------------------------------------------------------------*/
+.artprojbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  min-height: 100vh;
+  /*
+    The code below utilzes "nth-child() Selector" since
+    most of the elements (i.e. square tiles) are repeated 
+    and are in the same class name
+    */
+}
+
+.artprojbody .artprojects {
+  position: relative;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /*
+        •repeat() --> autofills on all sides
+        •min of 300 px; max of 1fr (or cell column) in the grid
+        */
+  -ms-grid-rows: minmax(100px, 1fr);
+      grid-template-rows: minmax(100px, 1fr);
+  margin: 40px;
+  grid-auto-flow: dense;
+}
+
+.artprojbody .artprojects .artprojContainer {
+  margin: 3px;
+  display: -ms-grid;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  background-color: black;
+}
+
+.artprojbody .artprojects .artprojImages {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  position: relative;
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.artprojbody .artprojects .artprojContainer:hover .artprojImages {
+  opacity: 0.3;
+}
+
+.artprojbody .artprojects .artprojContainer:hover .artprojText {
+  opacity: 1;
+}
+
+.artprojbody .artprojects .artprojText {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.artprojbody .artprojects .text {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 16px 32px;
+}
+
+.artprojbody .artprojects a:hover, .artprojbody .artprojects a:visited, .artprojbody .artprojects a:link, .artprojbody .artprojects a:active {
+  text-decoration: none;
+}
+
+.artprojbody .artprojContainer:nth-child(1) {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.artprojbody .artprojContainer:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.artprojbody .artprojContainer:nth-child(3) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.artprojbody .artprojContainer:nth-child(4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.artprojbody .artprojContainer:nth-child(5) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.artprojbody .artprojContainer:nth-child(6) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.artprojbody .artprojContainer:nth-child(7) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Research, Projects in Progress, Projects in the Future
+•This block of code only utilizes an h3 header since all contents are just text
+-------------------------------------------------------------*/
+h3 {
+  margin-left: 150px;
+}
+
+.details {
+  text-align: left;
+  margin: 20px 200px 20px 200px;
+}
+/*# sourceMappingURL=projPortfoliostyle.css.map */

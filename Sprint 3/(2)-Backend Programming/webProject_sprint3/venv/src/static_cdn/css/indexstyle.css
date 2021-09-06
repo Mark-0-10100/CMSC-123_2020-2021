@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background-image: url("../images/BackGroundStrip.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Navigation Bar
+•This block of code contains the styles for the navigation bar of the page
+-------------------------------------------------------------*/
+.nav-container {
+  background-color: black;
+}
+
+.nav-container .namelogo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin-left: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.namelogo:hover {
+  color: black;
+  background-color: white;
+  border-radius: 1em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+  background-color: #ffffff;
+  border-radius: 1em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+/*Greetings Styles
+•This block of code contains the styles for the Greetings
+-------------------------------------------------------------*/
+.greetings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.greetings .textContainer {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 6vw;
+  font-weight: bold;
+  padding-left: 15vw;
+}
+
+.greetings .textContainer .greet {
+  display: inline-block;
+  line-height: 1;
+}
+
+.greetings .textContainer .occupation {
+  display: inline-block;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 3vw;
+}
+/*# sourceMappingURL=indexstyle.css.map */

@@ -1,0 +1,38 @@
+{% extends 'base_NavBar.html' %}
+{% load static %}
+
+{% block navbar %}
+    <!-- Reference the style sheet from static folder -->
+    <link rel="stylesheet" href="{% static "css/blogs-Style.css" %}">
+
+    {% if searchField %}    <!-- If the user really placed a search input -->
+    <div class="divisionTitle">
+        <h1>Searched for: "{{ searchField }}"</h1>
+    </div>
+
+        {% if not blogSearch %} <!-- When there are no results -->
+        <div class="divisionTitle">
+            <h1>No results found.</h1>
+        </div>
+
+        {% else %}
+
+        {% for blog in blogSearch %} <!--Shows the results-->
+        <a href="{{ blog.get_absolute_url }}" class="blog"> 
+            <div class="blog-container"> 
+                <h1> {{ blog.title }}</h1>
+            </div>
+        </a>
+        {% endfor %}
+
+        {% endif %}
+    
+        
+    {% else %}  <!-- If the user didnt place a search input -->
+        <h1>It looks like you didn't search for anything.</h1>
+    {% endif %}
+
+
+    
+
+{% endblock %}
