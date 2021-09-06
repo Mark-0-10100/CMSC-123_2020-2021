@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../(3)-css/contactMe.css">
+    <!-- Uses a library (from "font-awsome") for the icons -->
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <!--Navigation Bar
+        •This block of code displays the navigation bar of the page 
+        •Uses an "unordered list" for the buttons
+    ----------------------------------------------------------------->
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="namelogo">Mark Anthony</a>
+        <nav>
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">My Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="projectPortfolio.html">Project Portfolio</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contactMe.html"><span>Contact Me</span></a></li>
+            </ul>
+        </nav>
+        </header>
+    </div>
+    <!--------------------------------------------------------------->
+
+    <!--Contact Form
+        •This block of code displays the Forms for the contacting me
+        •Contains an iframe for my location through GoogleMaps
+    ----------------------------------------------------------------->  
+    <div class="contactMeContainer">
+        <div class="contactMe">
+           <div class="forms">
+                <h1>Contact Me</h1>
+                <form>
+                    <input type="text" placeholder="Name" id="name" class="form-text" required/>
+                    <input type="text" placeholder="Email" id="email" class="form-text" required/>
+                    <textarea placeholder="Message" id="message" class="form-textMessage" required></textarea>
+                    <input onclick="validateForm();" type="submit" placeholder="Submit" class="form-submitButton"/>
+                    <div id="validationError"></div>
+                </form>
+            </div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.097081234836!2d125.16460611525075!3d6.117632629444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f79f0896f782ef%3A0x8c3b4d4e350524cf!2sBayabas%20St%2C%20General%20Santos%20City%2C%20South%20Cotabato!5e0!3m2!1sen!2sph!4v1627665126455!5m2!1sen!2sph" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+    </div>
+    <!--------------------------------------------------------------->
+    
+    <!--JavaScript and GSAP 
+        •This block of code contains the library import (from "GSAP") for the animations; and
+        •External JavaScript
+    ----------------------------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../(4)-javascript/contactMeScript.js"></script>
+    <!--------------------------------------------------------------->
+
+
+
+</body>
+</html>
